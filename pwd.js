@@ -1,6 +1,8 @@
 
+const done = require('./bash')
+
 function pwd() {
-        process.stdout.write(process.cwd())
+        done(process.cwd())
 }
 
 module.exports = pwd;

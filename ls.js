@@ -1,4 +1,4 @@
-
+const done = require('./bash')
 const fs = require('fs')
 
 function ls() {
@@ -6,8 +6,7 @@ function ls() {
         if (err) {
             throw err
         } else {
-            process.stdout.write(files.join('\n'))
-            process.stdout.write('prompt > ')
+            done(files.join('\n'))
         }
     })
 }

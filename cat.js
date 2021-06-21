@@ -1,3 +1,4 @@
+const done = require('./bash')
 const fs = require('fs');
 
 function cat(arg) {
@@ -6,8 +7,8 @@ function cat(arg) {
         if (err) {
             throw err
         } else {
-            process.stdout.write(arg)
-            process.stdout.write('prompt > ');
+            done(arg)
+
         }
     })
 }
