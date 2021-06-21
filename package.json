@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/caitlin-rich/node-shell/issues"
   },
-  "homepage": "https://github.com/caitlin-rich/node-shell#readme"
+  "homepage": "https://github.com/caitlin-rich/node-shell#readme",
+  "dependencies": {
+    "request": "^2.88.2"
+  }
 }
